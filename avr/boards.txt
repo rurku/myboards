@@ -1,0 +1,28 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.cpu=Processor
+
+##############################################################
+
+uno1Mhz.name=Arduino 328p 1Mhz
+
+uno1Mhz.upload.tool=arduino:avrdude
+uno1Mhz.upload.protocol=arduino
+# maximum_size is reduced because we set fuses to use 1024 bytes for bootloader
+uno1Mhz.upload.maximum_size=31744
+uno1Mhz.upload.maximum_data_size=2048
+uno1Mhz.upload.speed=9600
+
+uno1Mhz.bootloader.tool=arduino:avrdude
+uno1Mhz.bootloader.low_fuses=0x62
+uno1Mhz.bootloader.high_fuses=0xDC
+uno1Mhz.bootloader.extended_fuses=0xFF
+uno1Mhz.bootloader.unlock_bits=0x3F
+uno1Mhz.bootloader.lock_bits=0x0F
+uno1Mhz.bootloader.file=optiboot/optiboot_atmega328_1mhz.hex
+
+uno1Mhz.build.mcu=atmega328p
+uno1Mhz.build.f_cpu=1000000L
+uno1Mhz.build.board=AVR_UNO
+uno1Mhz.build.core=arduino:arduino
+uno1Mhz.build.variant=arduino:standard
