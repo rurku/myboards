@@ -31,7 +31,7 @@ Building and installing optiboot with different clock speed
           miso  = 65;
         ;
     * Connect atmega328p to Orange PI Plus GPIO
-        | GPIO pin | GPIO pin name | line | atmega218p pin |
+        | GPIO pin | GPIO pin name | line | atmega328p pin |
         |----------|---------------|------|----------------|
         | 9        | GND           | GND  | 8              |
         | 1        | 3.3V          | VCC  | 7              |
